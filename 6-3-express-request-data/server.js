@@ -109,7 +109,9 @@ const app = express();
 
 
 // create server
-
+app.get("/", (req, res) => {
+    res.send("Server Up")
+})
 
 // Query params: /echo?name=Ali&age=22
 
